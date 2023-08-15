@@ -1,0 +1,35 @@
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+        Scanner ler = new Scanner(System.in);
+        
+System.out.println("Digite o nome do colaborador:");
+ String nome= ler.nextLine();
+ 
+ System.out.println("Digite o salario do colaborador:");
+ float salario= ler.nextFloat();
+  
+  if (salario <=1400) {
+      double valor=salario*0.10;
+      double novo=salario+valor;
+       System.out.print("Salario antigo:" + salario + "\n");
+       
+       
+       System.out.print("Novo salario:" + novo + "\n");
+       
+       System.out.print("Teve um aumento de:10%" + "\n");
+       
+}
+    else{
+       double valor=salario*0.075;
+       double novo= salario+valor;
+        System.out.print("Salario antigo:" + salario + "\n");
+       
+        System.out.print("salario novo:" + novo + "\n");
+        
+        System.out.print("Teve um aumento de :7,5%" + "\n");
+}
+  
+  }
+}

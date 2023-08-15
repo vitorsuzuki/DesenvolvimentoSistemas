@@ -1,0 +1,50 @@
+
+.banner{ 
+position: absolute
+left: 300px; 
+top: 10px;
+max-width: 1500px;
+}
+
+button{
+color: black;
+border-color: #000000;
+background: #A52A2A;
+height: 40px;
+width: 100px;
+}
+
+
+body{
+background-color:#E6E6FA; 
+}
+
+.th{
+position: absolute; 
+left: 270px; 
+top: 350px; 
+font-style: italic;
+text-decoration: underline;
+}
+
+.lt{
+position: absolute; 
+left: 270px; 
+top: 430px;
+max-width: 600px;
+}
+
+.vd{
+position: absolute; 
+left: 970px; 
+top: 330px;
+max-width: 600px;
+}
+
+.vm{
+position: absolute; 
+left: 1400px; 
+top: 330px;
+max-width: 600px;
+}
+

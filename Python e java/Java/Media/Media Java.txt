@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner ent = new Scanner (System.in); 
+        Float n1, n2, media;
+        
+        
+        System.out.println("Insira a sua primeira nota: ");
+        n1 = ent.nextFloat();
+        
+        System.out.println("Insira a sua primeira nota: ");
+        n2 = ent.nextFloat();
+        
+        media = (n1+n2)/2;
+        System.out.println(media);
+        
+        if(media>=7){
+            System.out.println("Aluno aprovado");
+            
+        }else{  
+            System.out.println("Aluno reprovado");
+        } 
+        
+    }
+}

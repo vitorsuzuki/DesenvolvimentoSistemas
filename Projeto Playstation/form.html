@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forms.css">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="Imagens/logo.png"></a></div>
+
+    </header>
+    
+    <form id="form">
+        <h1 class="cen">formulario</h1>
+
+        <div class="container">
+
+            <fieldset>
+                <legend> Informações</legend>
+
+                <div class="col-25">
+                    <label for="name">Nome completo:</label>
+                    <input title="Digite seu nome" type="text" id="name">
+                </div>
+                
+                <hr></br>
+
+                <div class="col-25">
+                    <label for="telefone">Telefone:</label>
+                    <input title="Digite seu telefone" type="tel" id="tell">
+                </div>
+
+                <hr></br>
+
+                <div class="col-25">
+                    <label for="e-mail">Email:</label>
+                    <input title="Digite seu email" type="email" id="email">
+                </div>
+
+                <hr></br>
+
+                <div class="col-25">
+                    <label for="senha">Senha</label>
+                    <input title="Digite sua senha" type="password" id="senha">
+                </div>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Enviar" id="submit">
+        </div>
+    </form>
+    <script>
+        
+        let nameInput = document.querySelector('#name');
+        let tellInput = document.querySelector('#tell');
+        let emailInput = document.querySelector('#email');
+        let senhaInput = document.querySelector('#senha');
+        let buttonInput = document.querySelector('#submit');
+
+        submit.addEventListener('click', (e) => {
+    
+            e.preventDefault()
+    
+            const nameValue = nameInput.value;
+            const tellValue = tellInput.value;
+            const emailValue = emailInput.value;
+            const senhaValue = senhaInput.value;
+    
+            if (nameValue == '' || tellValue == ''|| emailValue == ''|| senhaValue == '') {
+    
+                alert('Preenchimento incorreto')
+    
+            } else {
+    
+                alert('Enviado')
+    
+            }
+    
+            const div = document.createElement("div");
+        div.classList = "item";
+        
+            items.appendChild(div);
+            nameInput.value =null;
+            tellInput.value =null;
+            emailInput.value =null;
+            senhaInput.value =null;
+    
+        } )
+
+        append_submit(form, "Enviar")
+    </script>
+</body>
+</html>

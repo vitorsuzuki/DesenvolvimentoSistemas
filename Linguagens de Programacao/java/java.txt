@@ -1,0 +1,79 @@
+package trabalho;
+
+import java.util.*;
+
+public class variavel {
+    public static <Int> void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+
+
+      System.out.printf("Digite seu nome:");
+     String name= scanner.nextLine();
+
+        System.out.printf("Digite sua data de nascimento:");
+        String nas= scanner.nextLine();
+
+
+
+        System.out.printf("Digite seu numero de telefone");
+        String tele= scanner.nextLine();
+
+        System.out.print("Digite seu RG");
+        String rg = scanner.nextLine();
+
+        System.out.print("Digite sua idade");
+        int idade= scanner.nextInt();
+
+
+        System.out.print("Digite seu endereço");
+        String ende= scanner.nextLine();
+
+
+
+        System.out.print("Digite seu sexo");
+        String sex= scanner.nextLine();
+
+
+        System.out.print("Digite seu e-mail");
+        String email= scanner.nextLine();
+        
+        System.out.print("Digite seu sálario");
+        float sal= Float.parseFloat(scanner.nextLine());
+
+        System.out.print("você possui um emprego? (true/false)");
+boolean empregado = Boolean.parseBoolean(scanner.nextLine());
+
+System.out.print("Digite seu cpf");
+        String cpf = scanner.nextLine();
+
+float impos;
+
+        impos = (float) (sal * 0.15);
+
+System.out.print(name+=System.lineSeparator());
+
+        System.out.print(nas+=System.lineSeparator());
+;
+        System.out.print(tele+=System.lineSeparator());
+
+        System.out.print(cpf+=System.lineSeparator());
+
+        System.out.print(rg+=System.lineSeparator());
+
+        System.out.print(ende+=System.lineSeparator());
+
+        System.out.print(email+=System.lineSeparator());
+
+        System.out.print(sex+=System.lineSeparator());
+
+        System.out.print(","+ sal);
+
+        System.out.print(","+ impos);
+
+        if(empregado == true ) {
+            System.out.print(", Empregado");
+        } else{
+            System.out.print(", Desempregado");
+        }
+    }
+}

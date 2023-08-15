@@ -1,0 +1,459 @@
+:root{
+    --cor1: white;
+    --cor2: #1a1a11;
+    --cor3: #000;
+    --cor4: #333;
+    --cor5: #012271;
+    --cor6: #E0EEEE;
+    --ff: 'Quicksand', Arial, Helvetica, sans-serif
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--cor5);
+    background-image: linear-gradient(#012271, #0238B5, #203669);
+    background-size: 100% 200%;
+
+    font-family: var(--ff);
+
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+
+    border-radius: 10px;
+    
+
+    background-color: var(--cor1);
+}
+
+header{
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 100%;
+    height: 70px;
+
+    background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(35,35,35,1) 17%, rgba(26,26,17,1) 100%);
+
+    padding: 10px;
+
+    box-shadow: 0px 5px 20px var(--cor3);
+}
+
+
+.menu{
+    list-style: none;
+
+    display: flex;
+}
+
+.menu li a{
+    color: white;
+
+    margin-left: 10px;
+
+    padding: 10px 20px 10px 20px;
+
+    border-radius: 10px;
+
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.menu li a:hover{
+    color: var(--cor1);
+
+    display: block;
+
+    margin-left: 10px;
+
+    background-color: var(--cor4);
+}
+
+.confimg{
+    text-align: center;
+    justify-content: center;
+
+    margin-left: 15%;
+}
+
+.confimg li{
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.confimg img{
+    height: 100%;
+    width: 200px;
+}
+
+h1{
+    color: var(--cor1);
+
+    margin-top: 20px;
+
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+    padding: 10px;
+
+}
+
+h3{
+    text-align: left;
+}
+
+.container{
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    padding: 10mm;
+
+    grid-template-areas: 
+    "banner banner banner"
+    "figure figure figure";
+}
+
+h2{
+    color: var(--cor1);
+
+    text-align: left;
+    text-decoration: underline;
+}
+
+.row{
+
+    display: block;
+
+    text-align: center;   
+}
+
+img{
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+.banner{
+    
+    grid-area: "banner";
+}
+
+.figure{
+    max-width: 300px;
+    min-width: 200px;
+    height: 300px;
+
+    border-radius: 20px;
+
+    grid-area: "figure";
+
+    margin: 40px;
+}
+
+.figure-caption{
+    display: block;
+    color:var(--cor1);
+
+    font-style: oblique;
+    font-size: 15px;
+    text-align: center;
+
+    padding: 10px;
+}
+
+.figure-caption:hover{
+    background-color: var(--cor4);
+    border-radius: 20px;
+
+    padding: 10px;
+
+    display: block;
+}
+
+footer{
+
+    width: 100%;
+    height: 90px;
+
+    background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(35,35,35,1) 17%, rgba(26,26,17,1) 100%);
+
+    padding: 10px;
+
+}
+
+.redes{
+    list-style: none;
+
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.redes li a img{
+    width: 100%;
+    height: 55px;
+
+    padding: 10px 20px 10px 20px;
+
+}
+
+.redes li a img:hover{
+
+    background-color: var(--cor4);
+
+}
+
+
+.redes p{
+    color: var(--cor1);
+
+    margin-right: 30%;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding-left: 90%;
+}
+
+#divBusca button{
+    color:var(--cor1)
+}
+
+#divBusca{
+    background-color:var(--cor6);
+
+    border:solid 2px var(--cor4);
+    border-radius:10px;
+
+    width:300px;
+    height:32px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    float: right;
+}
+  
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:206px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+  
+#btnBusca{
+    border:none;
+
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:var(--cor4);
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#divBusca img{
+    height: 100%;
+    width: 20px;
+
+    float:left;
+}
+
+#btn-mobile{
+    display:none;
+
+}
+
+@media (max-width:660px) {
+
+    .menu{
+        display: none;
+
+    }
+
+    #nav.active .menu{
+        display: block;
+
+        position: absolute;
+
+        top: 70px;
+
+        right: 0;
+
+        width: 100%;
+        height: 400px;
+
+        background-color: #1a1a11;
+
+        padding: 10px;
+
+        transition: .6s;
+    }
+
+    #btn-mobile{
+        display: flex;
+
+        padding: .7rem .2rem;
+
+        font-size: 1rem;
+
+        border: none;
+
+        background: none;
+
+        cursor: pointer;
+
+        gap: .5rem;
+    }
+
+    #hamb{
+        border-top: 2px solid;
+
+        width: 20px;
+
+        color: white;
+        
+    }
+
+    #hamb::after, #hamb::before{
+        content: '';
+
+        display: block;
+
+        width: 20px;
+
+        height: 2px;
+
+        background: currentColor;
+
+        margin-top: 5px;
+
+        transition: .3s;
+
+        position: relative;
+
+    }
+
+    #nav.active #hamb{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamb:before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamb:after{
+        transform: rotate(-135deg);
+
+        top: -7px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .figure{
+        max-width: 200px;
+        min-width: 100px;
+        height: 200px;
+    
+        background-color: var(--cor4);
+        border-radius: 20px;
+    
+        grid-area: "figure";
+        margin: 40px;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+    
+        background-color: var(--cor5);
+        background-image: linear-gradient(#012271, #0238B5, #203669);
+        background-size: 400% 400%;
+    
+        font-family: var(--ff);
+    
+    }
+
+    .redes li a img{
+        width: 50px;
+        height: 50px;
+    
+        padding: 5px 10px 5px 10px;
+    }
+
+    .confimg{
+        text-align: center;
+        justify-content: center;
+    
+    }
+
+    .pesquisa{
+        display: flex;
+        justify-content: flex-end;
+        
+        padding-left: 1%;
+        margin-top: 30px;
+    }
+
+    
+    .menu li a{
+        color: white;
+    
+        margin-left: 10px;
+    
+        padding: 10px 20px 10px 20px;
+    
+        border-radius: 10px;
+    
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    .menu li a:hover{
+        color: var(--cor1);
+    
+        display: block;
+    
+        margin-left: 10px;
+    
+        background-color: var(--cor4);
+    }
+
+}
+
+@media (min-width: 1079px) {
+    .pesquisa{
+        display: flex;
+        justify-content: flex-end;
+        
+        padding-left: 200px;
+        margin-top: 30px;
+    }
+}

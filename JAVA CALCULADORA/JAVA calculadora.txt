@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class Main {
+public static void main(String[] args) {
+
+char operador;
+Double n1, n2, result;
+Scanner input = new Scanner(System.in);
+
+System.out.println("digite o primeiro numero:");
+n1 = input.nextDouble();
+System.out.println("Digite qual operacao:");
+operador = input.next().charAt(0);
+System.out.println("digite o segundo numero:");
+n2 = input.nextDouble();
+
+switch (operador) {
+case '+':
+result = n1 + n2;
+System.out.println(n1+ "+" + n2 + "= "+ result);
+break;
+
+case '-':
+result = n1 - n2;
+System.out.println(n1+ "-" + n2 + "= "+ result);
+break;
+
+case '*':
+result = n1 * n2;
+System.out.println(n1+ "*" + n2 + "= "+ result);
+break;
+
+case '/':
+result = n1 / n2;
+System.out.println(n1+ "/" + n2 + "= "+ result);
+break;
+default:
+System.out.println("operador invalido");
+}
+input.close();
+}
+}
